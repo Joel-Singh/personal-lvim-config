@@ -2,6 +2,7 @@ lvim.builtin.which_key.mappings["t"] = {
   name = "Telescope",
   c = {"<cmd>Telescope command_history<cr>", "Command History"},
   b = {"<cmd>Telescope buffers<cr>", "Buffers"},
+  o = {"<cmd>Telescope oldfiles<cr>", "Old Files"},
 }
 -- Read the docs: https://www.lunarvim.org/docs/configuration
 -- Example configs: https://github.com/LunarVim/starter.lvim
