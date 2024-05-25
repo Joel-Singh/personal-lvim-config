@@ -4,6 +4,7 @@ lvim.builtin.which_key.mappings["t"] = {
   b = {"<cmd>Telescope buffers<cr>", "Buffers"},
   o = {"<cmd>Telescope oldfiles<cr>", "Old Files"},
 }
+vim.o.timeoutlen = 0
 lvim.keys.normal_mode["<S-h>"] = "<cmd>bprevious<cr>"
 lvim.keys.normal_mode["<S-l>"] = "<cmd>bnext<cr>"
 lvim.keys.normal_mode["<S-q>"] = "<cmd>BufferKill<cr>"
