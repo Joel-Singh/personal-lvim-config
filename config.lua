@@ -8,6 +8,7 @@ lvim.builtin.which_key.mappings["t"] = {
 lvim.builtin.which_key.mappings["r"] = {"<cmd>!love ./<cr><cr>", "Run love game"}
 
 vim.o.timeoutlen = 0
+vim.o.relativenumber = true
 lvim.keys.normal_mode["<S-h>"] = "<cmd>bprevious<cr>"
 lvim.keys.normal_mode["<S-l>"] = "<cmd>bnext<cr>"
 lvim.keys.normal_mode["<S-q>"] = "<cmd>BufferKill<cr>"
