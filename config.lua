@@ -5,8 +5,6 @@ lvim.builtin.which_key.mappings["t"] = {
   o = {"<cmd>Telescope oldfiles<cr>", "Old Files"},
 }
 
-lvim.builtin.which_key.mappings["r"] = {"<cmd>!love ./<cr><cr>", "Run love game"}
-
 vim.o.timeoutlen = 0
 vim.o.relativenumber = true
 lvim.keys.normal_mode["<S-h>"] = "<cmd>bprevious<cr>"
