@@ -7,6 +7,7 @@ lvim.builtin.which_key.mappings["t"] = {
 
 vim.o.timeoutlen = 0
 vim.o.relativenumber = true
+vim.o.linebreak = true
 lvim.keys.normal_mode["<S-h>"] = "<cmd>bprevious<cr>"
 lvim.keys.normal_mode["<S-l>"] = "<cmd>bnext<cr>"
 lvim.keys.normal_mode["<S-q>"] = "<cmd>BufferKill<cr>"
