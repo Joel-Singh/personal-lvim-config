@@ -11,6 +11,9 @@ vim.o.linebreak = true
 lvim.keys.normal_mode["<S-h>"] = "<cmd>bprevious<cr>"
 lvim.keys.normal_mode["<S-l>"] = "<cmd>bnext<cr>"
 lvim.keys.normal_mode["<S-q>"] = "<cmd>BufferKill<cr>"
+
+vim.o.spell = true
+
 -- Read the docs: https://www.lunarvim.org/docs/configuration
 -- Example configs: https://github.com/LunarVim/starter.lvim
 -- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
