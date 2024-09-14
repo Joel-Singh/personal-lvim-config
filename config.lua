@@ -14,6 +14,15 @@ lvim.keys.normal_mode["<S-h>"] = "<cmd>bprevious<cr>"
 lvim.keys.normal_mode["<S-l>"] = "<cmd>bnext<cr>"
 lvim.keys.normal_mode["<S-q>"] = "<cmd>BufferKill<cr>"
 
+lvim.autocommands = {
+    {
+        "BufEnter", -- see `:h autocmd-events`
+        { -- this table is passed verbatim as `opts` to `nvim_create_autocmd`
+            pattern = { "*.tex" }, -- see `:h autocmd-events`
+            command = "setlocal wrap",
+        }
+    },
+}
 
 -- Read the docs: https://www.lunarvim.org/docs/configuration
 -- Example configs: https://github.com/LunarVim/starter.lvim
