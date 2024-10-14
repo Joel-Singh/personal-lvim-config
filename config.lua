@@ -3,6 +3,11 @@ lvim.builtin.which_key.mappings["t"] = {
   c = {"<cmd>Telescope command_history<cr>", "Command History"},
   b = {"<cmd>Telescope buffers<cr>", "Buffers"},
   o = {"<cmd>Telescope oldfiles<cr>", "Old Files"},
+  k = {"<cmd>Telescope current_buffer_fuzzy_find<cr>", "Kurrent Buffer"},
+}
+
+lvim.builtin.which_key.mappings[""] = {
+  r = {"<cmd>!cargo run<cr>", "Cargo run"},
 }
 
 vim.o.timeoutlen = 0
