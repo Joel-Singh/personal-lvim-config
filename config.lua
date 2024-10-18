@@ -7,7 +7,7 @@ lvim.builtin.which_key.mappings["t"] = {
 }
 
 lvim.builtin.which_key.mappings[""] = {
-  r = {"<cmd>!cargo run<cr>", "Cargo run"},
+  r = {"<cmd>lua RunCurrentFile()<cr>", "run"},
 }
 
 vim.o.timeoutlen = 0
@@ -28,6 +28,13 @@ lvim.autocommands = {
         }
     },
 }
+
+function RunCurrentFile()
+  if (vim.bo.filetype == "tex") then
+    vim.cmd("!"..vim.fn.expand("%:p:h").."/".."compile.sh")
+  end
+  -- vim.cmd.
+end
 
 -- Read the docs: https://www.lunarvim.org/docs/configuration
 -- Example configs: https://github.com/LunarVim/starter.lvim
