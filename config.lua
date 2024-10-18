@@ -23,7 +23,7 @@ lvim.autocommands = {
     {
         "BufEnter", -- see `:h autocmd-events`
         { -- this table is passed verbatim as `opts` to `nvim_create_autocmd`
-            pattern = { "*.tex" }, -- see `:h autocmd-events`
+            pattern = { "*.tex", "*.md" }, -- see `:h autocmd-events`
             command = "setlocal wrap",
         }
     },
