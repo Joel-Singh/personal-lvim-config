@@ -33,7 +33,10 @@ function RunCurrentFile()
   if (vim.bo.filetype == "tex") then
     vim.cmd("!"..vim.fn.expand("%:p:h").."/".."compile.sh")
   end
-  -- vim.cmd.
+
+  if (vim.bo.filetype == "python") then
+    vim.cmd("!python "..vim.fn.expand("%:P"))
+  end
 end
 
 -- Read the docs: https://www.lunarvim.org/docs/configuration
