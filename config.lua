@@ -37,6 +37,10 @@ function RunCurrentFile()
   if (vim.bo.filetype == "python") then
     vim.cmd("!python "..vim.fn.expand("%:P"))
   end
+
+  if (vim.bo.filetype == "rust") then
+    vim.cmd("!cargo run")
+  end
 end
 
 -- Read the docs: https://www.lunarvim.org/docs/configuration
