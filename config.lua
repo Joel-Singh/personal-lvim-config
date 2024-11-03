@@ -35,6 +35,7 @@ function RunCurrentFile()
   end
 
   if (vim.bo.filetype == "python") then
+    vim.cmd("cd "..vim.fn.expand("%:p:h"))
     vim.cmd("!python "..vim.fn.expand("%:P"))
   end
 
